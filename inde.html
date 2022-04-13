@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+}
+
+.container {
+  background-color: #333;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: .5em;
+    outline: none;
+}
+h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="" id="title">
+        <button>Add</button>
+    </form>
+    <div id="con" class="container">
+        <p class="draggable" draggable="true">1</p>
+        <p class="draggable" draggable="true">2</p>
+        <p class="draggable" draggable="true">3</p>
+        <p class="draggable" draggable="true">4</p>
+        <p class="draggable" draggable="true">5</p>
+    </div>
+    <div id="con1" class="container">
+        <h2 align="center">Drag here</h2>
+        <!-- <p class="draggable" draggable="true">3</p>
+        <p class="draggable" draggable="true">4</p> -->
+    </div>
+</body>
+
+</html>
